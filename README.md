@@ -25,7 +25,7 @@ cd 2DIsingMC.jl
 julia run2disingmc.jl [-i INIT] [-s SEACH] L temp J exec_time
 ```
 
-Required arguments:
+### Required arguments:
     
 - L : Number of nodes on the side of the considered lattice
 
@@ -35,7 +35,7 @@ Required arguments:
 
 - exec_time : Montecarlo steps per site $t_s$ for the simulation. This refers to a total of $L^2t_s$ iterations of the Metropolis algorithm
 
-Optional arguments:
+### Optional arguments:
 
 - INIT [-i] : Initial state. Accepts either of the strings ['r', 'f', 'fn']. Each meaning that either a random or ferromagnetic initial state will be considered. It also accepts the path to a file containing a square table of $\pm 1$ values refering to the initial state of each of the spins.  Defaults to 'r'.
 
