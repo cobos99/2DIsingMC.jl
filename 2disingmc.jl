@@ -118,7 +118,7 @@ module mc2dising
         end
     end
 
-    function ferromagnetic_initialization(L::Int, negspins::Bool=false)::Matrix{Int}
+    function ferromagnetic_initialization(L::Int; negspins::Bool=false)::Matrix{Int}
         return (-1)^negspins .* ones(Int, L, L)
     end
 
